@@ -109,6 +109,7 @@ class TableBoltNutSceneCfg(
         prim_path="/World/envs/env_.*/FixedAsset",
         spawn=sim_utils.UsdFileCfg(
             usd_path=f"{ASSET_DIR}/factory_bolt_m16.usd",
+            scale=(1.5, 1.5, 1.5),
             activate_contact_sensors=True,
             rigid_props=sim_utils.RigidBodyPropertiesCfg(
                 disable_gravity=False,
@@ -124,7 +125,10 @@ class TableBoltNutSceneCfg(
             ),
         ),
         init_state=ArticulationCfg.InitialStateCfg(
-            pos=(-0.15, 0.50, 0.79), rot=(1.0, 0.0, 0.0, 0.0), joint_pos={}, joint_vel={}
+            pos=(-0.15, 0.50, 0.79),
+            rot=(1.0, 0.0, 0.0, 0.0),
+            joint_pos={},
+            joint_vel={},
         ),
         actuators={},
     )
@@ -132,6 +136,7 @@ class TableBoltNutSceneCfg(
         prim_path="/World/envs/env_.*/HeldAsset",
         spawn=sim_utils.UsdFileCfg(
             usd_path=f"{ASSET_DIR}/factory_nut_m16.usd",
+            scale=(1.55, 1.55, 1.55),
             activate_contact_sensors=True,
             rigid_props=sim_utils.RigidBodyPropertiesCfg(
                 disable_gravity=False,
