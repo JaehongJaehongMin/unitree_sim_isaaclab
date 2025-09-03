@@ -525,6 +525,7 @@ G129_CFG_WITH_INSPIRE_HAND = ArticulationCfg(
             armature={
                 ".*": 0.0
             },
+            friction=200.0,
         ),
 
     },

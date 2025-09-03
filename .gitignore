@@ -122,3 +122,8 @@ data/
 assets/
 assets.*
 assets
+
+IsaacLab
+unitree_sdk2_python
+unitree_sim_isaaclab_usds
+install.sh
