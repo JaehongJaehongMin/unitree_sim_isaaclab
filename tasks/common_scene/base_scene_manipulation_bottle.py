@@ -108,7 +108,7 @@ class TableBottleSceneCfg(
     bottle = RigidObjectCfg(
         prim_path="{ENV_REGEX_NS}/Bottle",
         spawn=sim_utils.UsdFileCfg(
-            usd_path=f"{project_root}/assets/objects/bottle0/output/bottle.usd",
+            usd_path=f"{project_root}/assets_/objects/bottle0/output/bottle.usd",
             scale=(0.1, 0.1, 0.1),
             rigid_props=sim_utils.RigidBodyPropertiesCfg(kinematic_enabled=False),
         ),
@@ -119,7 +119,7 @@ class TableBottleSceneCfg(
     cap = RigidObjectCfg(
         prim_path="{ENV_REGEX_NS}/BottleCap",
         spawn=sim_utils.UsdFileCfg(
-            usd_path=f"{project_root}/assets/objects/bottle0/output/bottle_cap.usd",
+            usd_path=f"{project_root}/assets_/objects/bottle0/output/bottle_cap.usd",
             scale=(1.0, 1.0, 1.0),
         ),
         init_state=RigidObjectCfg.InitialStateCfg(
